@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { IVehicle } from './IVehicle';
 
-const motorcycleZodSchema = z.object({
+export const motorcycleZodSchema = z.object({
   _id: z.string().optional(),
   model: z.string().min(3),
   year: z.number().int().gte(1900).lte(2022),
