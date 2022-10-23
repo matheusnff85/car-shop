@@ -37,13 +37,11 @@ class CarService implements IService<ICar> {
 
   public async update(id: string, obj: unknown): Promise<ICar> {
     if (!isValidObjectId(id)) throw new Error(ErrorTypes.InvalidId);
-    if (!obj) throw new Error(ErrorTypes.EmptyBody);
+    if (!obj || JSON.stringify(obj) === '{}') throw new Error(ErrorTypes.EmptyBody);
 
     const car = await this._carModel.update(id, obj as ICar);
     if (!car) throw new Error(ErrorTypes.NotFound);
-
-    const carUpdated = await this._carModel.readOne(id);
-    return carUpdated as ICar;
+    return car as ICar;
   }
 }
 
