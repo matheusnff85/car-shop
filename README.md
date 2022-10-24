@@ -12,6 +12,8 @@ Node.js, Typescript, Express, MongoDB, Mongoose, Mocha, Chai, Sinon, Docker, doc
 
 # Como utilizar a aplicação
 
+- independente do modo escolhido abaixo a API irá utilizar a porta **3001** do localhost.
+
 <details>
   <summary>
     <strong>Rodando localmente</strong>
@@ -21,7 +23,6 @@ Node.js, Typescript, Express, MongoDB, Mongoose, Mocha, Chai, Sinon, Docker, doc
   - Configure a URI do MongoDB e Coloque a mesma no arquivo `./src/models/connection.ts` na constante `MONGO_DB_URL`.
   - Para iniciar a API basta utilizar o comando: `npm run dev`.
 
-  **A API irá utilizar a porta `3001` do localhost.**
 </details>
 
 <details>
@@ -34,7 +35,6 @@ Node.js, Typescript, Express, MongoDB, Mongoose, Mocha, Chai, Sinon, Docker, doc
   - Após acessado o terminal instale as dependências do projeto com o comando: `npm install`.
   - Ainda no terminal do container para iniciar a API basta usar o comando: `npm run dev`.
 
-  **A API irá utilizar a porta `3001` do localhost.**
 </details>
 
 ---
