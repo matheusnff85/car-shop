@@ -124,4 +124,10 @@ Node.js, Typescript, Express, MongoDB, Mongoose, Mocha, Chai, Sinon, Docker, doc
 
 ---
 
+# Testes unitários
+
+- Os testes foram feitos por mim e estão localizados na pasta `./src/tests`, para rodar todos os testes utilize o comando `npm run test:dev` e caso queira verificar a cobertura dos testes utilize o comando `npm run test:coverage`.
+
+---
+
 - Desenvolvido por [Matheus Marinho](https://www.linkedin.com/in/matheus-marinhodsp/).
